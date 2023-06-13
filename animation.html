@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grundlæggende animation</title>
+  <meta name="Googlebot" content="noindex">
+  <meta name="description"
+    content="Dette tema har lært mig om grundlæggende animation, prøv det af i mit spil hvor man skal forhindre plastik i at ende i  havet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet">
+    <link rel="icon" type="image/svg" href="svg/logo.svg">
+</head>
+
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="subcontainer">
+        <div class="container">
+          <a href="index.html"><img src="svg/logo.svg" alt="logo" class="logo"></a>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="om.html">Om mig</a></li>
+            <li class="nav-item"><a href="web.html">Grundlæggende web</a></li>
+            <li class="nav-item"><a href="ux.html">Grundlæggende UX</a></li>
+            <li class="nav-item"><a class="active" href="animation.html">Grundlæggende animation</a></li>
+            <li class="nav-item"><a href="indhold.html">Grundlæggende indhold</a></li>
+            <li class="nav-item"><a href="portfolio.html">Portfolio eksamen</a></li>
+          </ul>
+          <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1>Grundlæggende animation</h1>
+    <div id="svg-anicontainer">
+      <img class="anib1" src="svg1/ani11.svg" alt="ani">
+      <img class="anib2" src="svg1/ani12.svg" alt="ani">
+      <a href="indhold.html">
+        <img class="anib3" src="svg1/ind11.svg" alt="ani" onmouseover="changeImage(this,'svg1/ind12.svg')"
+          onmouseout="changeImage(this, 'svg1/ind11.svg')" ontouchstart="changeImage(this,'svg1/ind12.svg')"
+          ontouchend="changeImage(this, 'svg1/ind11.svg')">
+      </a>
+    </div>
+    <div id="line-anicontainer">
+      <div class="aniline1"></div>
+      <div class="aniline2"></div>
+    </div>
+
+    <div class="total_grid1">
+      <div class="tot1">
+        <p>På tema 4, grundlæggende animation, blev jeg introduceret til programmeringssproget JavaScript. JavaScript
+          anvendes til at kode mere avanceret og for at opnå en responsiv side, som anvendes til at skabe en dynamisk og
+          interaktiv oplevelse for brugeren.</p>
+        <p>
+          I denne opgave skulle jeg animere og kode et simpelt spil. Sammen med ny læring om Javascript tog jeg mine
+          erfaringer fra tema 2 med, hvor jeg lærte om CSS, for at udvikle et klikbart spil.</p>
+        <p>
+          Først stod den på idegenerering for at finde på tema, ide og koncept. Herefter videre til metoderne fra tema
+          2, moodboard og styletile.
+
+          Mit koncept handler om to drenge der gerne vil forhindre plastikaffald i at ende i havet, så de kan nyde og
+          passe på vores havliv. Ud fra denne ide begyndte jeg at udvikle aktivitets- og statemachine- diagram, som
+          bruges til at planlægge det mere komplekse interaktive flow. Disse diagrammer fungerer også som modeller, som
+          man kan kode sit JavaScript ud fra.
+          Det var inden for dette emne, at jeg virkelig udvidede mine kompetencer i Adobe programmet Illustrator. Her
+          tegnede jeg alle mine grafiske elementer, herunder UI-elementer, figurelementer og baggrundsdesign. Alle mine
+          grafiske illustrationer blev samlet i en liste over alle elementer (assets).
+        </p>
+        <p> I mit spil skulle man indsamle elementer som falder lodret ned. Hvis man klikker på henholdsvis gode eller
+          dårlige elementer, som i mit tilfælde var plastikaffald og fisk, fik man enten point eller mistet liv. Alt
+          efter hvad man klikkede på skete en “fade-ind” eller “drej” animation. Dette fik jeg til at fungere fra den
+          viden jeg vik om css keyframes.
+        </p>
+        <p>
+          <a href="http://laurasmedegaard.dk/kea/04_animation/website/index.html" target="_blank"> Prøv mit spil her </a> <br>
+          <a href="http://laurasmedegaard.dk/kea/04_animation/website/assets.html" target="_blank"> Link til assetslisten </a>
+        </p>
+
+
+      </div>
+      <div class="total_grid1_1">
+        <img class="tb1" src="ani/skitse1.webp" alt="skitse">
+        <img class="tb2" src="ani/ani1.webp" alt="ani">
+        <img class="tb3" src="ani/ani2.webp" alt="ani">
+        <img class="tb4" src="ani/ani3.webp" alt="ani">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a href="https://www.linkedin.com/public-profile/settings" target="_blank"> <img  src="svg/li.svg" alt="linkedin"> </a>
+    <a href="mailto:laha0005@stud.kea.dk" target="_blank"> <img  src="svg/mail.svg" alt="mail"> </a>
+    <a href="https://www.instagram.com/laura_smedegaard/" target="_blank"> <img  src="svg/insta.svg" alt="insta"> </a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
