@@ -1,0 +1,637 @@
+/* opsætning af bacis sider: web, ux, ani, ind */
+
+.tb1,
+.tb2,
+.tb3,
+.tb4,
+.tb5,
+.tb6,
+.tb7,
+.tb8 {
+    width: 70%;
+    max-width: 85%;
+    height: auto;
+    margin-left: 15%;
+}
+
+.total_grid1,
+.total_grid1_1,
+.total_grid2_2 {
+    position: relative;
+    z-index: 4;
+}
+
+.tot1 {
+    margin-left: 5%;
+}
+
+.tot2 {
+    margin-left: 5%;
+}
+
+@media (max-width: 1000px) {
+    .tot1 {
+        margin-left: 0%;
+    }
+
+    .tot2 {
+        margin-left: 0%;
+    }
+
+    .tb1,
+    .tb2,
+    .tb3,
+    .tb4,
+    .tb5,
+    .tb6,
+    .tb7,
+    .tb8 {
+        margin-left: 20%;
+    }
+}
+
+@media (min-width: 800px) {
+    .total_grid1 {
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    .total_grid1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+
+    .total_grid1_1 {
+        grid-column: 1 /span 1;
+        grid-row: 1;
+    }
+
+    .total_grid2_2 {
+        grid-column: 1 /span 1;
+        grid-row: 2;
+    }
+
+    .tot1 {
+        grid-column: 2 /span 1;
+        grid-row: 1;
+    }
+
+    .tot2 {
+        grid-column: 2 /span 1;
+        grid-row: 2;
+    }
+
+    .tb1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .tb2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .tb3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .tb4 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .tb5 {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .tb6 {
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    .tb5 {
+        grid-column: 1;
+        grid-row: 8;
+    }
+
+    .tb6 {
+        grid-column: 1;
+        grid-row: 9;
+    }
+}
+
+/* Om mig Linjen */
+
+#svg-omcontainer {
+    position: relative;
+}
+
+#svg-omcontainer .omb1 {
+    position: absolute;
+    top: -85px;
+    left: 445px;
+    z-index: 5;
+}
+
+#svg-omcontainer .omb2 {
+    position: absolute;
+    top: 650px;
+    left: 455px;
+    z-index: 5;
+}
+
+#svg-omcontainer .omb3 {
+    position: absolute;
+    top: 1040px;
+    left: 450px;
+    z-index: 5;
+}
+
+#line-omcontainer {
+    position: relative;
+}
+
+.omline1 {
+    position: absolute;
+    left: 490px;
+    height: 630px;
+    width: 2px;
+    background-color: #EC85B3;
+    z-index: 5;
+}
+
+.omline2 {
+    position: absolute;
+    top: 760px;
+    left: 490px;
+    height: 250px;
+    width: 2px;
+    background: linear-gradient(to bottom, #EC85B3, #F07E42);
+    z-index: 5;
+}
+
+@media (max-width: 1000px) {
+    #svg-omcontainer .omb1 {
+        top: -80px;
+        left: -8px;
+        z-index: 5;
+    }
+
+    #svg-omcontainer .omb2 {
+        top: 1000px;
+        left: 0px;
+        z-index: 5;
+    }
+
+    #svg-omcontainer .omb3 {
+        top: 1800px;
+        left: -5px;
+        z-index: 5;
+    }
+
+    .omline1 {
+        left: 40px;
+        height: 970px;
+        z-index: 5;
+        top: 10px;
+    }
+
+    .omline2 {
+        top: 1100px;
+        left: 40px;
+        height: 670px;
+        z-index: 5;
+
+    }
+}
+
+
+/* web Linjen */
+
+#svg-wcontainer {
+    position: relative;
+}
+
+#svg-wcontainer .wb1 {
+    position: absolute;
+    top: -85px;
+    left: 430px;
+    z-index: 5;
+}
+
+#svg-wcontainer .wb2 {
+    position: absolute;
+    top: 790px;
+    left: 440px;
+    z-index: 5;
+}
+
+#svg-wcontainer .wb3 {
+    position: absolute;
+    top: 1600px;
+    left: 450px;
+    z-index: 5;
+}
+
+#line-wcontainer {
+    position: relative;
+}
+
+.wline1 {
+    position: absolute;
+    left: 490px;
+    height: 770px;
+    width: 2px;
+    background-color: #F07E42;
+    z-index: 5;
+}
+
+.wline2 {
+    position: absolute;
+    top: 880px;
+    left: 490px;
+    height: 690px;
+    width: 2px;
+    background: linear-gradient(to bottom, #F07E42, #9AC7C8);
+    z-index: 5;
+}
+
+@media (max-width: 1000px) {
+    #svg-wcontainer .wb1 {
+        top: -80px;
+        left: -15px;
+        z-index: 5;
+    }
+
+    #svg-wcontainer .wb2 {
+        top: 1610px;
+        left: -10px;
+        z-index: 5;
+    }
+
+    #svg-wcontainer .wb3 {
+        top: 3070px;
+        left: -5px;
+        z-index: 5;
+    }
+
+    .wline1 {
+        left: 40px;
+        height: 1600px;
+        z-index: 5;
+    }
+
+    .wline2 {
+        top: 1700px;
+        left: 40px;
+        height: 1360px;
+        z-index: 5;
+
+    }
+}
+
+/*UX Linje*/
+
+#svg-uxcontainer {
+    position: relative;
+}
+
+#svg-uxcontainer .uxb1 {
+    position: absolute;
+    top: -85px;
+    left: 445px;
+    z-index: 5;
+}
+
+#svg-uxcontainer .uxb2 {
+    position: absolute;
+    top: 600px;
+    left: 445px;
+    z-index: 5;
+}
+
+#svg-uxcontainer .uxb3 {
+    position: absolute;
+    top: 1430px;
+    left: 450px;
+    z-index: 5;
+}
+
+#line-uxcontainer {
+    position: relative;
+}
+
+.uxline1 {
+    position: absolute;
+    top: 10px;
+    left: 490px;
+    height: 560px;
+    width: 2px;
+    background-color: #9AC7C8;
+    z-index: 5;
+}
+
+.uxline2 {
+    position: absolute;
+    top: 700px;
+    left: 490px;
+    height: 710px;
+    width: 2px;
+    background: linear-gradient(to bottom, #9AC7C8, #2F52A0);
+    z-index: 5;
+}
+
+@media (max-width: 1000px) {
+    #svg-uxcontainer .uxb1 {
+        top: -80px;
+        left: -5px;
+        z-index: 5;
+    }
+
+    #svg-uxcontainer .uxb2 {
+        top: 910px;
+        left: -10px;
+        z-index: 5;
+    }
+
+    #svg-uxcontainer .uxb3 {
+        top: 2580px;
+        left: -5px;
+        z-index: 5;
+    }
+
+    .uxline1 {
+        left: 40px;
+        top: 20px;
+        height: 860px;
+        z-index: 5;
+    }
+
+    .uxline2 {
+        top: 1010px;
+        left: 40px;
+        height: 1550px;
+        z-index: 5;
+    }
+}
+
+/*Animations Linje*/
+
+#svg-anicontainer {
+    position: relative;
+}
+
+#svg-anicontainer .anib1 {
+    position: absolute;
+    top: -85px;
+    left: 445px;
+    z-index: 5;
+}
+
+#svg-anicontainer .anib2 {
+    position: absolute;
+    top: 455px;
+    left: 425px;
+    z-index: 5;
+}
+
+#svg-anicontainer .anib3 {
+    position: absolute;
+    top: 1000px;
+    left: 440px;
+    z-index: 5;
+}
+
+#line-anicontainer {
+    position: relative;
+}
+
+.aniline1 {
+    position: absolute;
+    top: 5px;
+    left: 490px;
+    height: 430px;
+    width: 2px;
+    background-color: #2F52A0;
+    z-index: 5;
+}
+
+.aniline2 {
+    position: absolute;
+    top: 530px;
+    left: 490px;
+    height: 450px;
+    width: 2px;
+    background: linear-gradient(to bottom, #2F52A0, #F7BD27);
+    z-index: 5;
+}
+
+@media (max-width: 1000px) {
+    #svg-anicontainer .anib1 {
+        top: -80px;
+        left: -10px;
+        z-index: 5;
+    }
+
+    #svg-anicontainer .anib2 {
+        top: 1135px;
+        left: -45px;
+        z-index: 5;
+    }
+
+    #svg-anicontainer .anib3 {
+        top: 2000px;
+        left: -5px;
+        z-index: 5;
+    }
+
+    .aniline1 {
+        left: 40px;
+        top: 10px;
+        height: 1100px;
+        z-index: 5;
+    }
+
+    .aniline2 {
+        top: 1200px;
+        left: 40px;
+        height: 780px;
+        z-index: 5;
+
+    }
+}
+
+/*Indhold Linje*/
+
+#svg-indcontainer {
+    position: relative;
+}
+
+#svg-indcontainer .indb1 {
+    position: absolute;
+    top: -85px;
+    left: 445px;
+    z-index: 5;
+}
+
+#svg-indcontainer .indb2 {
+    position: absolute;
+    top: 630px;
+    left: 445px;
+    z-index: 5;
+}
+
+#svg-indcontainer .indb3 {
+    position: absolute;
+    top: 1950px;
+    left: 450px;
+    z-index: 5;
+}
+
+#line-indcontainer {
+    position: relative;
+}
+
+.indline1 {
+    position: absolute;
+    top: 10px;
+    left: 490px;
+    height: 600px;
+    width: 2px;
+    background-color: #F7BD27;
+    z-index: 5;
+}
+
+.indline2 {
+    position: absolute;
+    top: 710px;
+    left: 490px;
+    height: 1220px;
+    width: 2px;
+    background: linear-gradient(to bottom, #F7BD27, #CF382E);
+    z-index: 5;
+}
+
+@media (max-width: 1000px) {
+    #svg-indcontainer .indb1 {
+        top: -80px;
+        left: -5px;
+        z-index: 5;
+    }
+
+    #svg-indcontainer .indb2 {
+        top: 1310px;
+        left: -10px;
+        z-index: 5;
+    }
+
+    #svg-indcontainer .indb3 {
+        top: 3840px;
+        left: -5px;
+        z-index: 5;
+    }
+
+    .indline1 {
+        left: 40px;
+        top: 20px;
+        height: 1260px;
+        z-index: 5;
+    }
+
+    .indline2 {
+        top: 1400px;
+        left: 40px;
+        height: 2420px;
+        z-index: 5;
+
+    }
+}
+
+/*portfolio eksamen  Linje*/
+
+#svg-portcontainer {
+    position: relative;
+}
+
+#svg-portcontainer .portb1 {
+    position: absolute;
+    top: -85px;
+    left: 445px;
+    z-index: 5;
+}
+
+#svg-portcontainer .portb2 {
+    position: absolute;
+    top: 530px;
+    left: 445px;
+    z-index: 5;
+}
+
+#svg-portcontainer .portb3 {
+    position: absolute;
+    top: 1280px;
+    left: 450px;
+    z-index: 5;
+}
+
+#line-portcontainer {
+    position: relative;
+}
+
+.portline1 {
+    position: absolute;
+    top: 10px;
+    left: 490px;
+    height: 500px;
+    width: 2px;
+    background-color: #C22220;
+    z-index: 5;
+}
+
+.portline2 {
+    position: absolute;
+    top: 630px;
+    left: 490px;
+    height: 630px;
+    width: 2px;
+    background: linear-gradient(to bottom, #CF382E, #EC85B3);
+    z-index: 5;
+}
+
+@media (max-width: 1000px) {
+    #svg-portcontainer .portb1 {
+        top: -80px;
+        left: -5px;
+        z-index: 5;
+    }
+
+    #svg-portcontainer .portb2 {
+        top: 850px;
+        left: -20px;
+        z-index: 5;
+    }
+
+    #svg-portcontainer .portb3 {
+        top: 2400px;
+        left: -5px;
+        z-index: 5;
+    }
+
+    .portline1 {
+        left: 40px;
+        top: 20px;
+        height: 810px;
+        z-index: 5;
+    }
+
+    .portline2 {
+        top: 940px;
+        left: 40px;
+        height: 1440px;
+        z-index: 5;
+
+    }
+}
